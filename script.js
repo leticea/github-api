@@ -14,6 +14,13 @@ const searchGithub = async () => {
         <div class="profile-details">
           <h2 class="name">${data.name || data.login}</h2>
           <p class="username">@${data.login}</p>
+          <p class="bio">${data.bio || "Account doesn't have a bio."}</p>
+
+          <div class="stats">
+            <div>
+              <div class="stats-name">Public Repos</div>
+              <div class="stats-value">${data.public_repos}</div>
+            </div>
         </div>
       </div>
     `;
