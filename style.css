@@ -15,3 +15,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.container {
+  padding: 30px 22px;
+  width: 42rem;
+}
+
+.container h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+}
+
