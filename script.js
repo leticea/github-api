@@ -1,10 +1,10 @@
 const searchGithub = async () => {
-  const username = document.getElementById("searchInput");
+  const username = document.getElementById("searchInput").value;
   const response = await fetch(`https://api.github.com/users/${username}`);
   const detailsContainer = document.querySelector(".details");
   const data = await response.json();
 
-  if (response.success) {
+  if (response.ok) {
     detailsContainer.style.display = "flex";
     document.getElementById("result").innerHTML = `
       <div class="profile">
@@ -51,9 +51,10 @@ const searchGithub = async () => {
               }</span>
             </p>
           </div>
-
         </div>
       </div>
     `;
+  } else {
+    alert(data.message);
   }
 };
