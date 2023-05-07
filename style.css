@@ -27,3 +27,21 @@ body {
   font-weight: 500;
 }
 
+.searchBox {
+  background-color: #161922;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 6px;
+}
+
+.searchBox input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 80%;
+  color: #fff;
+  font-size: 15px;
+}
