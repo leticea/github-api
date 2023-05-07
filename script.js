@@ -21,6 +21,37 @@ const searchGithub = async () => {
               <div class="stats-name">Public Repos</div>
               <div class="stats-value">${data.public_repos}</div>
             </div>
+            <div>
+              <div class="stats-name">Followers</div>
+              <div class="stats-value">${data.followers}</div>
+            </div>
+            <div>
+              <div class="stats-name">Following</div>
+              <div class="stats-value">${data.following}</div>
+            </div>
+          </div>
+
+          <div class="media">
+            <p>
+              <span class="media-value">${
+                data.location || "Not Available"
+              }</span>
+            </p>
+            <p>
+              <span class="media-value">${data.blog || "Not Available"}</span>
+            </p>
+            <p>
+              <span class="media-value">${
+                data.twitter_username || "Not Available"
+              }</span>
+            </p>
+            <p>
+              <span class="media-value">${
+                data.company || "Not Available"
+              }</span>
+            </p>
+          </div>
+
         </div>
       </div>
     `;
