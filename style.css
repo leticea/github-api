@@ -60,3 +60,12 @@ body {
 .searchBox button:hover {
   background-color: #3a28fa;
 }
+
+.details {
+  margin-top: 20px;
+  background-color: #161922;
+  padding: 20px 25px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  display: none;
+}
