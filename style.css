@@ -45,3 +45,14 @@ body {
   color: #fff;
   font-size: 15px;
 }
+
+.searchBox button {
+  background-color: #675afe;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
